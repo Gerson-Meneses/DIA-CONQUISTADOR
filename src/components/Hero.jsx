@@ -68,25 +68,27 @@ export default function Hero() {
         <h1 className="hero__title">
           ¡Habla, <span>Señor!</span>
         </h1>
-        <div >
-        <p className="speak__verse">
-          «Habla, Señor, que tu siervo escucha.»
-          <span className="speak__verse-ref">1 Samuel 3:10</span>
-        </p>
-      </div>
+        <div>
+          <p className="speak__verse">
+            «Habla, Señor, que tu siervo escucha.»
+            <span className="speak__verse-ref">1 Samuel 3:10</span>
+          </p>
+        </div>
         <p className="hero__date">19 · 09 · 2026</p>
 
-        <div className="hero__for">
-          <p className="hero__for-label">Esta historia también es para</p>
-          <p className="hero__for-name">Jenifer Llacsahuache</p>
-          <p className="hero__for-role">Mi consejera favorita</p>
-        </div>
+       
       </div>
 
-      <a href="#historia" className="hero__scroll">
-        <span className="hero__scroll-line" />
-        Comenzar la historia
-      </a>
+      {/* Cambiado a una estructura de botón/enlace interactivo más fuerte */}
+      <div className="hero__scroll-container">
+        <a href="#historia" className="hero__scroll-btn">
+          <span className="hero__scroll-glow" />
+          Un repaso por la Historia
+          <svg className="hero__scroll-arrow" viewBox="0 0 24 24" width="20" height="20">
+            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+          </svg>
+        </a>
+      </div>
     </section>
   )
 }

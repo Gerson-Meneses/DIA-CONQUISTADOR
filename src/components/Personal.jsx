@@ -18,8 +18,8 @@ export default function Personal() {
 
           <div className="personal__facts">
             <p><strong>Rol —</strong> Consejera de Club de Conquistadores</p>
-            <p><strong>Lo que enseña —</strong> con el ejemplo, antes que con palabras</p>
-            <p><strong>Lo que deja —</strong> una huella en cada persona que pasa por su club</p>
+            <p><strong>La que enseña —</strong> con el ejemplo, antes que con palabras</p>
+            <p><strong>La que deja —</strong> una huella en cada persona que pasa por su club</p>
           </div>
         </div>
       </div>

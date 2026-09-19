@@ -54,7 +54,7 @@ export const EMBLEM_PARTS = [
     label: 'Azul',
     color: 'var(--blue-pathfinder)',
     title: 'Lealtad',
-    text: 'Permanecer firme en lo que se cree, incluso cuando nadie más lo hace.',
+    text: 'Permanecer firme en lo que se cree, incluso cuando nadie más lo hace. Lealtad a Dios: Refleja el carácter del Señor como guía principal.',
   },
   {
     id: 'gold',
@@ -74,22 +74,22 @@ export const EMBLEM_PARTS = [
     id: 'shield',
     label: 'Escudo',
     color: 'var(--blue-pathfinder)',
-    title: 'Protección',
-    text: 'El escudo representa la protección que ofrece caminar junto a otros, guiados y guiando.',
+    title: 'FE',
+    text: 'Simboliza la protección y la fe en Dios, recordando versículos bíblicos como Génesis 15:1 ("Yo soy tu escudo") y Efesios 6:16 ("el escudo de la fe").',
   },
   {
     id: 'sword',
     label: 'Espada',
     color: 'var(--cream)',
     title: 'La Biblia',
-    text: 'La espada representa la Palabra de Dios, la herramienta central de todo el ministerio.',
+    text: '. Simboliza la "Espada del Espíritu", que se usa en la batalla espiritual contra el mal.',
   },
   {
     id: 'triangle',
     label: 'Triángulo',
     color: 'var(--gold)',
-    title: 'Mente, cuerpo y espíritu',
-    text: 'Los tres lados representan el desarrollo integral de la persona, y también la Trinidad.',
+    title: 'Los 3 Lados',
+    text: 'Representan la Trinidad (Padre, Hijo y Espíritu Santo) y el equilibrio armónico en el desarrollo del joven: físico, mental y espiritual (según Lucas 2:52). Es invertido porque la base de apoyo es Cristo',
   },
 ]
 

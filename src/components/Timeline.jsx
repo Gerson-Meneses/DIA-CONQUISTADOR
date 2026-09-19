@@ -17,7 +17,7 @@ export default function Timeline() {
   return (
     <section id="historia" className="section">
       <div ref={headRef} className={`reveal${headVisible ? ' is-visible' : ''}`}>
-        <span className="section-kicker">Pero esta historia comenzó mucho antes</span>
+        <span className="section-kicker">Esta historia comenzó...</span>
         <h2 className="section-title">76 años de camino</h2>
         <p className="section-lede">
           El Club de Conquistadores no apareció de un día para otro en 1950. Fue el
