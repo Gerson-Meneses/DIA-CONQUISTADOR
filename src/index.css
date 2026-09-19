@@ -891,10 +891,10 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.5rem;
   font-family: inherit;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: .8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #071018; /* Fondo oscuro del texto */
