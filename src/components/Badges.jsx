@@ -3,9 +3,13 @@ import { BADGES } from '../data.js'
 import { useReveal } from '../useReveal.js'
 
 export default function Badges() {
-  const [open, setOpen] = useState(null)
+  const [flippedId, setFlippedId] = useState(null)
   const [ref, visible] = useReveal()
-  const current = BADGES.find((b) => b.id === open)
+
+  const handleFlip = (id) => {
+    // Si haces click en el mismo, se vuelve a voltear; si es otro, gira ese.
+    setFlippedId(flippedId === id ? null : id)
+  }
 
   return (
     <section className="section section--wide">
@@ -19,28 +23,31 @@ export default function Badges() {
       </div>
 
       <div className="badges-grid">
-        {BADGES.map((badge) => (
-          <button
-            key={badge.id}
-            className={`badge${open === badge.id ? ' is-open' : ''}`}
-            onClick={() => setOpen(badge.id)}
-            aria-pressed={open === badge.id}
-          >
-            <span className="badge__icon" aria-hidden="true">{badge.icon}</span>
-            <span className="badge__name">{badge.name}</span>
-          </button>
-        ))}
-      </div>
+        {BADGES.map((badge) => {
+          const isFlipped = flippedId === badge.id
 
-      <div className="badge-detail">
-        {current ? (
-          <>
-            <h3 className="badge-detail__title">{current.title}</h3>
-            <p className="badge-detail__text">{current.text}</p>
-          </>
-        ) : (
-          <p className="badge-detail__placeholder">Toca una insignia para leer su historia.</p>
-        )}
+          return (
+            <div 
+              key={badge.id} 
+              className={`badge-card ${isFlipped ? 'is-flipped' : ''}`}
+              onClick={() => handleFlip(badge.id)}
+            >
+              <div className="badge-card__inner">
+                {/* Cara frontal */}
+                <div className="badge-card__face badge-card__face--front">
+                  <span className="badge__icon" aria-hidden="true">{badge.icon}</span>
+                  <span className="badge__name">{badge.name}</span>
+                </div>
+
+                {/* Cara trasera (Texto) */}
+                <div className="badge-card__face badge-card__face--back">
+                  <h3 className="badge-card__title">{badge.title}</h3>
+                  <p className="badge-card__text">{badge.text}</p>
+                </div>
+              </div>
+            </div>
+          )
+        })}
       </div>
     </section>
   )

@@ -6,7 +6,7 @@ export default function Personal() {
     <section className="personal">
       <div ref={ref} className={`reveal${visible ? ' is-visible' : ''}`}>
         <p className="personal__intro">
-          Pero el Escudo no cuenta tu historia. Detrás de cada pañolín hay una
+          Pero el Escudo no cuenta tu historia. Detrás de cada pañoleta hay una
           historia. Detrás de cada insignia, un esfuerzo. Detrás de cada campamento,
           un recuerdo. Y detrás de cada club, alguien que decidió acompañar a otros
           en el camino.
